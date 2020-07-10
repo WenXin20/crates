@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blue_concrete"
+    },
+    "1": {
+      "item": "minecraft:lapis_block"
+    },
+    "2": {
+      "item": "minecraft:blue_concrete"
+    },
+    "3": {
+      "item": "minecraft:lapis_block"
+    },
+    "5": {
+      "item": "minecraft:lapis_block"
+    },
+    "6": {
+      "item": "minecraft:blue_concrete"
+    },
+    "7": {
+      "item": "minecraft:lapis_block"
+    },
+    "8": {
+      "item": "minecraft:blue_concrete"
+    }
+  },
+  "result": {
+    "item": "crates:lapis_crate",
+    "count": 3
+  }
+}

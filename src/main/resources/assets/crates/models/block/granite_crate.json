@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/granite",
+    "particle": "minecraft:block/granite",
+    "crate_frame": "minecraft:block/granite",
+    "crate_center": "minecraft:block/polished_granite"
+  }
+}

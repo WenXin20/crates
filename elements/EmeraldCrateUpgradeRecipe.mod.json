@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:forge:gems/emerald"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:forge:gems/emerald"
+      },
+      {
+        "value": "TAG:forge:storage_blocks/emerald"
+      },
+      {
+        "value": "TAG:forge:gems/emerald"
+      },
+      {
+        "value": "Blocks.BARRIER"
+      },
+      {
+        "value": "TAG:forge:gems/diamond"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EmeraldCrateUpgrade"
+    },
+    "name": "emerald_crate_upgrade_recipe",
+    "namespace": "mod"
+  }
+}

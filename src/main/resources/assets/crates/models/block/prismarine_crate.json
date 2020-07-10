@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/prismarine_bricks",
+    "particle": "minecraft:block/prismarine_bricks",
+    "crate_frame": "minecraft:block/prismarine_bricks",
+    "crate_center": "minecraft:block/prismarine"
+  }
+}

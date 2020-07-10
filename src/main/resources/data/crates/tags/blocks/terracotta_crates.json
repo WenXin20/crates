@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "crates:white_terracotta_crate",
+    "crates:orange_terracotta_crate",
+    "crates:magenta_terracotta_crate",
+    "crates:light_blue_terracotta_crate",
+    "crates:yellow_terracotta_crate",
+    "crates:lime_terracotta_crate",
+    "crates:pink_terracotta_crate",
+    "crates:gray_terracotta_crate",
+    "crates:light_gray_terracotta_crate",
+    "crates:cyan_terracotta_crate",
+    "crates:purple_terracotta_crate",
+    "crates:blue_terracotta_crate",
+    "crates:brown_terracotta_crate",
+    "crates:green_terracotta_crate",
+    "crates:red_terracotta_crate",
+    "crates:black_terracotta_crate"
+  ]
+}

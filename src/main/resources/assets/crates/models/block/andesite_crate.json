@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/andesite",
+    "particle": "minecraft:block/andesite",
+    "crate_frame": "minecraft:block/andesite",
+    "crate_center": "minecraft:block/polished_andesite"
+  }
+}

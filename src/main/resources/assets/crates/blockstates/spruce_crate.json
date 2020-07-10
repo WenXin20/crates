@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "crates:block/spruce_crate"
+    },
+    "facing=north": {
+      "model": "crates:block/spruce_crate"
+    },
+    "facing=east": {
+      "model": "crates:block/spruce_crate",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "crates:block/spruce_crate",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "crates:block/spruce_crate",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "crates:block/spruce_crate",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

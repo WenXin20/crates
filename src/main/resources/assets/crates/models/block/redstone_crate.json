@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/redstone_block",
+    "particle": "minecraft:block/redstone_block",
+    "crate_frame": "minecraft:block/red_concrete",
+    "crate_center": "minecraft:block/redstone_block"
+  }
+}

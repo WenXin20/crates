@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "crates:oak_crate",
+    "crates:acacia_crate",
+    "crates:birch_crate",
+    "crates:dark_oak_crate",
+    "crates:jungle_crate",
+    "crates:spruce_crate",
+    "crates:stripped_acacia_crate",
+    "crates:stripped_birch_crate",
+    "crates:stripped_dark_oak_crate",
+    "crates:stripped_jungle_crate",
+    "crates:stripped_oak_crate",
+    "crates:stripped_spruce_crate"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "1": {
+      "tag": "forge:gems/diamond"
+    },
+    "2": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "3": {
+      "tag": "forge:gems/diamond"
+    },
+    "5": {
+      "tag": "forge:gems/diamond"
+    },
+    "6": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "7": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "8": {
+      "item": "minecraft:light_blue_concrete"
+    }
+  },
+  "result": {
+    "item": "crates:diamond_crate",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/spruce_planks",
+    "particle": "minecraft:block/spruce_planks",
+    "crate_frame": "minecraft:block/stripped_spruce_log",
+    "crate_center": "minecraft:block/spruce_planks"
+  }
+}

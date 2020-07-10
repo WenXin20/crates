@@ -1,0 +1,166 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:OakCrate"
+      },
+      {
+        "value": "CUSTOM:AcaciaCrate"
+      },
+      {
+        "value": "CUSTOM:BirchCrate"
+      },
+      {
+        "value": "CUSTOM:DarkOakCrate"
+      },
+      {
+        "value": "CUSTOM:JungleCrate"
+      },
+      {
+        "value": "CUSTOM:SpruceCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedAcaciaCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedBirchCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedDarkOakCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedJungleCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedOakCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedSpruceCrate"
+      },
+      {
+        "value": "CUSTOM:GraniteCrate"
+      },
+      {
+        "value": "CUSTOM:AndesiteCrate"
+      },
+      {
+        "value": "CUSTOM:DioriteCrate"
+      },
+      {
+        "value": "CUSTOM:StoneCrate"
+      },
+      {
+        "value": "CUSTOM:SlimeCrate"
+      },
+      {
+        "value": "CUSTOM:PrismarineCrate"
+      },
+      {
+        "value": "CUSTOM:DarkPrismarineCrate"
+      },
+      {
+        "value": "CUSTOM:HoneycombCrate"
+      },
+      {
+        "value": "CUSTOM:HoneyCrate"
+      },
+      {
+        "value": "CUSTOM:MagmaCrate"
+      },
+      {
+        "value": "CUSTOM:LapisCrate"
+      },
+      {
+        "value": "CUSTOM:GoldCrate"
+      },
+      {
+        "value": "CUSTOM:IronCrate"
+      },
+      {
+        "value": "CUSTOM:DiamondCrate"
+      },
+      {
+        "value": "CUSTOM:EmeraldCrate"
+      },
+      {
+        "value": "CUSTOM:ObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:RedNetherBricksCrate"
+      },
+      {
+        "value": "CUSTOM:RedstoneCrate"
+      },
+      {
+        "value": "CUSTOM:CoalCrate"
+      },
+      {
+        "value": "CUSTOM:IronObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:GoldObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:DiamondObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:EmeraldObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:WhiteTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:OrangeTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:MagentaTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:LightBlueTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:YellowTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:LimeTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:PinkTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:GrayTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:LightGrayTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:CyanTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:PurpleTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:BlueTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:BrownTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:GreenTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:RedTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:BlackTerracottaCrate"
+      }
+    ],
+    "functions": [],
+    "name": "chests",
+    "namespace": "forge"
+  }
+}

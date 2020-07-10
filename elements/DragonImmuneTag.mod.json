@@ -1,0 +1,16 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:ObsidianCrate"
+      }
+    ],
+    "functions": [],
+    "name": "dragon_immune",
+    "namespace": "minecraft"
+  }
+}

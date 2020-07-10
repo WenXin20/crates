@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/magma",
+    "particle": "minecraft:block/magma",
+    "crate_frame": "minecraft:block/nether_bricks",
+    "crate_center": "minecraft:block/magma"
+  }
+}

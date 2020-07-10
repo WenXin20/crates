@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/honey_block_top",
+    "particle": "minecraft:block/honey_block_top",
+    "crate_frame": "minecraft:block/honey_block_top",
+    "crate_center": "minecraft:block/honey_block_side"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/acacia_planks",
+    "particle": "minecraft:block/acacia_planks",
+    "crate_frame": "minecraft:block/acacia_log",
+    "crate_center": "minecraft:block/acacia_planks"
+  }
+}

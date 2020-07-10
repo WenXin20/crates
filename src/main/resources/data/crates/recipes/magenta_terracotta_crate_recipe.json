@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:magenta_terracotta"
+    },
+    "1": {
+      "item": "minecraft:terracotta"
+    },
+    "2": {
+      "item": "minecraft:magenta_terracotta"
+    },
+    "3": {
+      "item": "minecraft:terracotta"
+    },
+    "5": {
+      "item": "minecraft:terracotta"
+    },
+    "6": {
+      "item": "minecraft:magenta_terracotta"
+    },
+    "7": {
+      "item": "minecraft:terracotta"
+    },
+    "8": {
+      "item": "minecraft:magenta_terracotta"
+    }
+  },
+  "result": {
+    "item": "crates:magenta_terracotta_crate",
+    "count": 1
+  }
+}

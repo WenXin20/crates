@@ -1,0 +1,33 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "tag": "forge:gems/diamond"
+    },
+    "3": {
+      "tag": "forge:gems/diamond"
+    },
+    "4": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "5": {
+      "tag": "forge:gems/diamond"
+    },
+    "6": {
+      "item": "minecraft:barrier"
+    },
+    "7": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "crates:diamond_crate_upgrade",
+    "count": 1
+  }
+}

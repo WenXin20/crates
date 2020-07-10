@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/dark_prismarine",
+    "particle": "minecraft:block/dark_prismarine",
+    "crate_frame": "minecraft:block/dark_prismarine",
+    "crate_center": "minecraft:block/dark_prismarine"
+  }
+}

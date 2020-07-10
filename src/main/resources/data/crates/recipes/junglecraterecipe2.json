@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:jungle_wood"
+    },
+    "1": {
+      "item": "minecraft:jungle_planks"
+    },
+    "2": {
+      "item": "minecraft:jungle_wood"
+    },
+    "3": {
+      "item": "minecraft:jungle_planks"
+    },
+    "5": {
+      "item": "minecraft:jungle_planks"
+    },
+    "6": {
+      "item": "minecraft:jungle_wood"
+    },
+    "7": {
+      "item": "minecraft:jungle_planks"
+    },
+    "8": {
+      "item": "minecraft:jungle_wood"
+    }
+  },
+  "result": {
+    "item": "crates:jungle_crate",
+    "count": 1
+  }
+}

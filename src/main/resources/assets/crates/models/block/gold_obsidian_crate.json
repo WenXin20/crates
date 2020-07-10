@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/gold_block",
+    "particle": "minecraft:block/gold_block",
+    "crate_frame": "minecraft:block/obsidian",
+    "crate_center": "minecraft:block/gold_block"
+  }
+}

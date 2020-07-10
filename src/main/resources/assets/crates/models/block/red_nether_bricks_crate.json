@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/red_nether_bricks",
+    "particle": "minecraft:block/red_nether_bricks",
+    "crate_frame": "minecraft:block/red_nether_bricks",
+    "crate_center": "minecraft:block/nether_wart_block"
+  }
+}

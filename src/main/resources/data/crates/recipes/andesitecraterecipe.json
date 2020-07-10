@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:polished_andesite"
+    },
+    "1": {
+      "item": "minecraft:andesite"
+    },
+    "2": {
+      "item": "minecraft:polished_andesite"
+    },
+    "3": {
+      "item": "minecraft:andesite"
+    },
+    "5": {
+      "item": "minecraft:andesite"
+    },
+    "6": {
+      "item": "minecraft:polished_andesite"
+    },
+    "7": {
+      "item": "minecraft:andesite"
+    },
+    "8": {
+      "item": "minecraft:polished_andesite"
+    }
+  },
+  "result": {
+    "item": "crates:andesite_crate",
+    "count": 1
+  }
+}

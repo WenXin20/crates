@@ -1,0 +1,2083 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "OakCrate",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "oak_crate"
+    },
+    {
+      "name": "CrateGUI",
+      "type": "gui",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "CrateOpenGUI",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChestsBlockTag",
+      "type": "tag",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ChestsItemTag",
+      "type": "tag",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WoodenChestsItemTag",
+      "type": "tag",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WoodenChestsBlockTag",
+      "type": "tag",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AcaciaCrate",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "acacia_crate"
+    },
+    {
+      "name": "BirchCrate",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "birch_crate"
+    },
+    {
+      "name": "DarkOakCrate",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dark_oak_crate"
+    },
+    {
+      "name": "JungleCrate",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "jungle_crate"
+    },
+    {
+      "name": "SpruceCrate",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "spruce_crate"
+    },
+    {
+      "name": "AcaciaCrateRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AcaciaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BirchCrateRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BirchCrateRecipe2",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DarkOakCrateRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DarkOakCrateRecipe2",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "JungleCrateRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "JungleCrateRecipe2",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OakCrateRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OakCrateRecipe2",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpruceCrateRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpruceCrateRecipe2",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedAcaciaCrate",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_acacia_crate"
+    },
+    {
+      "name": "StrippedBirchCrate",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_birch_crate"
+    },
+    {
+      "name": "StrippedDarkOakCrate",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_dark_oak_crate"
+    },
+    {
+      "name": "StrippedJungleCrate",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_jungle_crate"
+    },
+    {
+      "name": "StrippedOakCrate",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_oak_crate"
+    },
+    {
+      "name": "StrippedSpruceCrate",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_spruce_crate"
+    },
+    {
+      "name": "StrippedAcaciaCrateRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedAcaciaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedBirchCrateRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedBirchCrateRecipe2",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedDarkOakCrateRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedDarkOakCrateRecipe2",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedJungleCrateRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedJungleCrateRecipe2",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedOakCrateRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedOakCrateRecipe2",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedSpruceCrateRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StrippedSpruceCrateRecipe2",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CrateCloseGUI",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GraniteCrate",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "granite_crate"
+    },
+    {
+      "name": "AndesiteCrate",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "andesite_crate"
+    },
+    {
+      "name": "DioriteCrate",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "diorite_crate"
+    },
+    {
+      "name": "StoneCrate",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stone_crate"
+    },
+    {
+      "name": "AndesiteCrateRecipe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DioriteCrateRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GraniteCrateRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StoneCrateRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SlimeCrate",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "slime_crate"
+    },
+    {
+      "name": "SlimeCrateRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CratesBlockTag",
+      "type": "tag",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CratesItemTag",
+      "type": "tag",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PrismarineCrate",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "prismarine_crate"
+    },
+    {
+      "name": "DarkPrismarineCrate",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dark_prismarine_crate"
+    },
+    {
+      "name": "PrismarineCrateRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "prismarine_crate_recipe"
+    },
+    {
+      "name": "DarkPrismarineCrateRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_prismarine_crate_recipe"
+    },
+    {
+      "name": "HoneycombCrate",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "honeycomb_crate"
+    },
+    {
+      "name": "HoneycombCrateRecipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "honeycomb_crate_recipe"
+    },
+    {
+      "name": "CratesTab",
+      "type": "tab",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crates_tab"
+    },
+    {
+      "name": "WaterloggingCode",
+      "type": "code",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "waterlogging_code"
+    },
+    {
+      "name": "HoneyCrate",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "honey_crate"
+    },
+    {
+      "name": "MagmaCrate",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "magma_crate"
+    },
+    {
+      "name": "CrateOpenSound",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crate_open_sound",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LapisCrate",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "lapis_crate"
+    },
+    {
+      "name": "GoldCrate",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "gold_crate"
+    },
+    {
+      "name": "GoldCrateRecipe",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_crate_recipe"
+    },
+    {
+      "name": "HoneyCrateRecipe",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "honey_crate_recipe"
+    },
+    {
+      "name": "LapisCrateRecipe",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lapis_crate_recipe"
+    },
+    {
+      "name": "MagmaCrateRecipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magma_crate_recipe"
+    },
+    {
+      "name": "IronCrate",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "iron_crate"
+    },
+    {
+      "name": "IronCrateRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_crate_recipe"
+    },
+    {
+      "name": "DiamondCrate",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "diamond_crate"
+    },
+    {
+      "name": "DiamondCrateRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_crate_recipe"
+    },
+    {
+      "name": "EmeraldCrate",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "emerald_crate"
+    },
+    {
+      "name": "EmeraldCrateRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerald_crate_recipe"
+    },
+    {
+      "name": "ObsidianCrate",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "obsidian_crate"
+    },
+    {
+      "name": "ObsidianCrateRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obsidian_crate_recipe"
+    },
+    {
+      "name": "DragonImmuneTag",
+      "type": "tag",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_immune_tag"
+    },
+    {
+      "name": "RedNetherBricksCrate",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "red_nether_bricks_crate"
+    },
+    {
+      "name": "RedstoneCrate",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "redstone_crate"
+    },
+    {
+      "name": "BlockDamageEntity",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_damage_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoalCrate",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "coal_crate"
+    },
+    {
+      "name": "RedNetherBricksCrateRecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nether_bricks_crate_recipe"
+    },
+    {
+      "name": "RedstoneCrateRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_crate_recipe"
+    },
+    {
+      "name": "StrippedAcaciaCrateRecipe3",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_acacia_crate_recipe_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrippedOakCrateRecipe3",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_oak_crate_recipe_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrippedBirchCrateRecipe3",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_birch_crate_recipe_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrippedDarkOakCrateRecipe3",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_dark_oak_crate_recipe_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrippedJungleCrateRecipe3",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_jungle_crate_recipe_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrippedSpruceCrateRecipe3",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "stripped_spruce_crate_recipe_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ObsidianCrateUpgrade",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obsidian_crate_upgrade"
+    },
+    {
+      "name": "CratesPreciseSelectionBox",
+      "type": "code",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crates_precise_selection_box"
+    },
+    {
+      "name": "CratesAdvancement",
+      "type": "achievement",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crates_advancement"
+    },
+    {
+      "name": "GrantCratesAdvancement",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grant_crates_advancement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ObsidianCrateUpgradeFunction",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obsidian_crate_upgrade_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ObsidianCrateUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obsidian_crate_upgrade_recipe"
+    },
+    {
+      "name": "CrateGUI2",
+      "type": "gui",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_2"
+    },
+    {
+      "name": "MagmaBlockDamage",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magma_block_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrateGUIIron",
+      "type": "gui",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_iron"
+    },
+    {
+      "name": "CrateGUIGold",
+      "type": "gui",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_gold"
+    },
+    {
+      "name": "IronObsidianCrate",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "iron_obsidian_crate"
+    },
+    {
+      "name": "IronCrateUpgrade",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_crate_upgrade"
+    },
+    {
+      "name": "GoldCrateUpgrade",
+      "type": "item",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_crate_upgrade"
+    },
+    {
+      "name": "DiamondCrateUpgrade",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_crate_upgrade"
+    },
+    {
+      "name": "EmeraldCrateUpgrade",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerald_crate_upgrade"
+    },
+    {
+      "name": "IronCrateUpgradeFunction",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_crate_upgrade_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronObsidianCrateUpgrade",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_obsidian_crate_upgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldCrateUpgradeFunction",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_crate_upgrade_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DiamondCrateUpgradeFunction",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_crate_upgrade_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldCrateUpgradeFunction",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerald_crate_upgrade_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldObsidianCrate",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "gold_obsidian_crate"
+    },
+    {
+      "name": "CrateGUIDiamond",
+      "type": "gui",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_diamond"
+    },
+    {
+      "name": "DiamondObsidianCrate",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "diamond_obsidian_crate"
+    },
+    {
+      "name": "EmeraldObsidianCrate",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "emerald_obsidian_crate"
+    },
+    {
+      "name": "IronCrateUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_crate_upgrade_recipe"
+    },
+    {
+      "name": "GoldCrateUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_crate_upgrade_recipe"
+    },
+    {
+      "name": "DiamondCrateUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_crate_upgrade_recipe"
+    },
+    {
+      "name": "EmeraldCrateUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerald_crate_upgrade_recipe"
+    },
+    {
+      "name": "CrateGUIEmerald",
+      "type": "gui",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crate_gui_emerald"
+    },
+    {
+      "name": "GoldObsidianCrateUpgrade",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_obsidian_crate_upgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DiamondObsidianCrateUpgrade",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_obsidian_crate_upgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldObsidianCrateUpgrade",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emerald_obsidian_crate_upgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WhiteTerracottaCrate",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "white_terracotta_crate"
+    },
+    {
+      "name": "OrangeTerracottaCrate",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "orange_terracotta_crate"
+    },
+    {
+      "name": "MagentaTerracottaCrate",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "magenta_terracotta_crate"
+    },
+    {
+      "name": "WhiteTerracottaRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_terracotta_recipe"
+    },
+    {
+      "name": "WhiteTerracottaRecipe2",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_terracotta_recipe_2"
+    },
+    {
+      "name": "TerracottaCratesItemTag",
+      "type": "tag",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terracotta_crates_item_tag"
+    },
+    {
+      "name": "TerracottaCratesBlockTag",
+      "type": "tag",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terracotta_crates_block_tag"
+    },
+    {
+      "name": "OrangeTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orange_terracotta_crate_recipe"
+    },
+    {
+      "name": "OrangeTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orange_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "MagentaTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magenta_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "MagentaTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magenta_terracotta_crate_recipe"
+    },
+    {
+      "name": "LightBlueTerracottaCrate",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "light_blue_terracotta_crate"
+    },
+    {
+      "name": "LightBlueTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_blue_terracotta_crate_recipe"
+    },
+    {
+      "name": "LightBlueTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_blue_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "YellowTerracottaCrate",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "yellow_terracotta_crate"
+    },
+    {
+      "name": "YellowTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellow_terracotta_crate_recipe"
+    },
+    {
+      "name": "YellowTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellow_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "LimeTerracottaCrate",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "lime_terracotta_crate"
+    },
+    {
+      "name": "LimeTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_terracotta_crate_recipe"
+    },
+    {
+      "name": "LimeTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "PinkTerracottaCrate",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pink_terracotta_crate"
+    },
+    {
+      "name": "PinkTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_terracotta_crate_recipe"
+    },
+    {
+      "name": "PinkTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "GrayTerracottaCrate",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "gray_terracotta_crate"
+    },
+    {
+      "name": "GrayTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gray_terracotta_crate_recipe"
+    },
+    {
+      "name": "GrayTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gray_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "LightGrayTerracottaCrate",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "light_gray_terracotta_crate"
+    },
+    {
+      "name": "LightGrayTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_gray_terracotta_crate_recipe"
+    },
+    {
+      "name": "LightGrayTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_gray_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "CyanTerracottaCrate",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "cyan_terracotta_crate"
+    },
+    {
+      "name": "CyanTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyan_terracotta_crate_recipe"
+    },
+    {
+      "name": "CyanTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyan_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "PurpleTerracottaCrate",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "purple_terracotta_crate"
+    },
+    {
+      "name": "PurpleTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_terracotta_crate_recipe"
+    },
+    {
+      "name": "PurpleTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "BlueTerracottaCrate",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "blue_terracotta_crate"
+    },
+    {
+      "name": "BlueTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_terracotta_crate_recipe"
+    },
+    {
+      "name": "BlueTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "BrownTerracottaCrate",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "brown_terracotta_crate"
+    },
+    {
+      "name": "BrownTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brown_terracotta_crate_recipe"
+    },
+    {
+      "name": "BrownTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brown_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "GreenTerracottaCrate",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "green_terracotta_crate"
+    },
+    {
+      "name": "GreenTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_terracotta_crate_recipe"
+    },
+    {
+      "name": "GreenTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "RedTerracottaCrate",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "red_terracotta_crate"
+    },
+    {
+      "name": "RedTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_terracotta_crate_recipe"
+    },
+    {
+      "name": "RedTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "BlackTerracottaCrate",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "black_terracotta_crate"
+    },
+    {
+      "name": "BlackTerracottaCrateRecipe",
+      "type": "recipe",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_terracotta_crate_recipe"
+    },
+    {
+      "name": "BlackTerracottaCrateRecipe2",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_terracotta_crate_recipe_2"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.crates.diorite_crate": "Diorite Crate",
+      "block.crates.iron_obsidian_crate": "Iron Obsidian Crate",
+      "block.crates.iron_crate": "Iron Crate",
+      "block.crates.red_terracotta_crate": "Red Terracotta Crate",
+      "block.crates.stripped_dark_oak_crate": "Stripped Dark Oak Crate",
+      "block.crates.yellow_terracotta_crate": "Yellow Terracotta Crate",
+      "block.crates.orange_terracotta_crate": "Orange Terracotta Crate",
+      "block.crates.acacia_crate": "Acacia Crate",
+      "block.crates.oak_crate": "Oak Crate",
+      "block.crates.stripped_acacia_crate": "Stripped Acacia Crate",
+      "block.crates.lapis_crate": "Lapis Lazuli Crate",
+      "block.crates.emerald_crate": "Emerald Crate",
+      "container.crate": "Crate",
+      "block.crates.slime_crate": "Slime Crate",
+      "block.crates.white_terracotta_crate": "White Terracotta Crate",
+      "block.crates.red_nether_bricks_crate": "Red Nether Bricks Crate",
+      "item.crates.iron_crate_upgrade": "Iron Crate Upgrade",
+      "block.crates.gold_crate": "Gold Crate",
+      "block.crates.andesite_crate": "Andesite Crate",
+      "block.crates.stripped_birch_crate": "Stripped Birch Crate",
+      "advancements.crates_advancement.descr": "Craft any crate",
+      "block.crates.emerald_obsidian_crate": "Emerald Obsidian Crate",
+      "block.crates.light_blue_terracotta_crate": "Light Blue Terracotta Crate",
+      "block.crates.spruce_crate": "Spruce Crate",
+      "block.crates.magenta_terracotta_crate": "Magenta Terracotta Crate",
+      "block.crates.black_terracotta_crate": "Black Terracotta Crate",
+      "block.crates.brown_terracotta_crate": "Brown Terracotta Crate",
+      "block.crates.lime_terracotta_crate": "Lime Terracotta Crate",
+      "block.crates.light_gray_terracotta_crate": "Light Gray Terracotta Crate",
+      "block.crates.stripped_spruce_crate": "Stripped Spruce Crate",
+      "block.crates.dark_prismarine_crate": "Dark Prismarine Crate",
+      "block.crates.dark_oak_crate": "Dark Oak Crate",
+      "block.crates.diamond_obsidian_crate": "Diamond Obsidian Crate",
+      "block.crates.jungle_crate": "Jungle Crate",
+      "block.crates.obsidian_crate": "Obsidian Crate",
+      "block.crates.granite_crate": "Granite Crate",
+      "item.crates.obsidian_crate_upgrade": "Obsidian Crate Upgrade",
+      "block.crates.stripped_oak_crate": "Stripped Oak Crate",
+      "itemGroup.tabcrates_tab": "Crates",
+      "block.crates.purple_terracotta_crate": "Purple Terracotta Crate",
+      "item.crates.diamond_crate_upgrade": "Diamond Crate Upgrade §4(WIP)",
+      "block.crates.stripped_jungle_crate": "Stripped Jungle Crate",
+      "block.crates.gold_obsidian_crate": "Gold Obsidian Crate",
+      "block.crates.pink_terracotta_crate": "Pink Terracotta Crate",
+      "block.crates.magma_crate": "Magma Crate",
+      "block.crates.blue_terracotta_crate": "Blue Terracotta Crate",
+      "block.crates.honeycomb_crate": "Honeycomb Crate",
+      "item.crates.emerald_crate_upgrade": "Emerald Crate Upgrade §4(WIP)",
+      "item.crates.gold_crate_upgrade": "Gold Crate Upgrade",
+      "block.crates.gray_terracotta_crate": "Gray Terracotta Crate",
+      "block.crates.honey_crate": "Honey Crate",
+      "block.crates.birch_crate": "Birch Crate",
+      "block.crates.prismarine_crate": "Prismarine Crate",
+      "block.crates.diamond_crate": "Diamond Crate",
+      "block.crates.redstone_crate": "Redstone Crate",
+      "block.crates.stone_crate": "Stone Crate",
+      "advancements.crates_advancement.title": "All the Crates!",
+      "block.crates.cyan_terracotta_crate": "Cyan Terracotta Crate",
+      "block.crates.coal_crate": "Coal Crate",
+      "block.crates.green_terracotta_crate": "Green Terracotta Crate"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "crates",
+    "modName": "Crates",
+    "version": "1.2.0",
+    "description": "Crates! Nothing more, nothing less.",
+    "author": "WenXin2",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.wenxin.crates",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000428114
+}

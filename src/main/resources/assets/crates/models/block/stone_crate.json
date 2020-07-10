@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/smooth_stone",
+    "particle": "minecraft:block/smooth_stone",
+    "crate_frame": "minecraft:block/stone",
+    "crate_center": "minecraft:block/smooth_stone"
+  }
+}

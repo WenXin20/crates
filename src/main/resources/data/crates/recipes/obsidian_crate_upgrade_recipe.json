@@ -1,0 +1,30 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "forge:obsidian"
+    },
+    "3": {
+      "tag": "forge:obsidian"
+    },
+    "4": {
+      "tag": "forge:obsidian"
+    },
+    "5": {
+      "tag": "forge:obsidian"
+    },
+    "7": {
+      "tag": "forge:stone"
+    }
+  },
+  "result": {
+    "item": "crates:obsidian_crate_upgrade",
+    "count": 1
+  }
+}

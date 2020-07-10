@@ -1,0 +1,16 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "crates:terracotta_crates"
+    },
+    {
+      "tag": "forge:dyes/black"
+    }
+  ],
+  "result": {
+    "item": "crates:black_terracotta_crate",
+    "count": 1
+  }
+}

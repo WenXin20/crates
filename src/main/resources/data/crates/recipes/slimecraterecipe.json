@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:slime_block"
+    },
+    "1": {
+      "tag": "forge:slimeballs"
+    },
+    "2": {
+      "item": "minecraft:slime_block"
+    },
+    "3": {
+      "tag": "forge:slimeballs"
+    },
+    "5": {
+      "tag": "forge:slimeballs"
+    },
+    "6": {
+      "item": "minecraft:slime_block"
+    },
+    "7": {
+      "tag": "forge:slimeballs"
+    },
+    "8": {
+      "item": "minecraft:slime_block"
+    }
+  },
+  "result": {
+    "item": "crates:slime_crate",
+    "count": 1
+  }
+}

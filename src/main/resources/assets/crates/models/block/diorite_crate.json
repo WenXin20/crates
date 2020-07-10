@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/diorite",
+    "particle": "minecraft:block/diorite",
+    "crate_frame": "minecraft:block/diorite",
+    "crate_center": "minecraft:block/polished_diorite"
+  }
+}

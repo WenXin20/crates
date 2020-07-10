@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/pink_terracotta",
+    "particle": "minecraft:block/pink_terracotta",
+    "crate_frame": "minecraft:block/pink_terracotta",
+    "crate_center": "minecraft:block/terracotta"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:nether_bricks"
+    },
+    "1": {
+      "item": "minecraft:magma_block"
+    },
+    "2": {
+      "item": "minecraft:nether_bricks"
+    },
+    "3": {
+      "item": "minecraft:magma_block"
+    },
+    "5": {
+      "item": "minecraft:magma_block"
+    },
+    "6": {
+      "item": "minecraft:nether_bricks"
+    },
+    "7": {
+      "item": "minecraft:magma_block"
+    },
+    "8": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "result": {
+    "item": "crates:magma_crate",
+    "count": 1
+  }
+}

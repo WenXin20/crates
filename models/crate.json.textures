@@ -1,0 +1,375 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "crate_frame": "oak_log",
+        "crate_center": "oak_planks"
+      },
+      "name": "default"
+    },
+    "acacia_crate": {
+      "map": {
+        "crate_frame": "acacia_log",
+        "crate_center": "acacia_planks"
+      },
+      "name": "acacia_crate"
+    },
+    "birch_crate": {
+      "map": {
+        "crate_frame": "birch_log",
+        "crate_center": "birch_planks"
+      },
+      "name": "birch_crate"
+    },
+    "jungle_crate": {
+      "map": {
+        "crate_frame": "jungle_log",
+        "crate_center": "jungle_planks"
+      },
+      "name": "jungle_crate"
+    },
+    "dark_oak_crate": {
+      "map": {
+        "crate_frame": "dark_oak_log",
+        "crate_center": "dark_oak_planks"
+      },
+      "name": "dark_oak_crate"
+    },
+    "spruce_crate": {
+      "map": {
+        "crate_frame": "spruce_log",
+        "crate_center": "spruce_planks"
+      },
+      "name": "spruce_crate"
+    },
+    "oak_crate": {
+      "map": {
+        "crate_frame": "oak_log",
+        "crate_center": "oak_planks"
+      },
+      "name": "oak_crate"
+    },
+    "stripped_acacia_crate": {
+      "map": {
+        "crate_frame": "stripped_acacia_log",
+        "crate_center": "acacia_planks"
+      },
+      "name": "stripped_acacia_crate"
+    },
+    "stripped_birch_crate": {
+      "map": {
+        "crate_frame": "stripped_birch_log",
+        "crate_center": "birch_planks"
+      },
+      "name": "stripped_birch_crate"
+    },
+    "stripped_dark_oak_crate": {
+      "map": {
+        "crate_frame": "stripped_dark_oak_log",
+        "crate_center": "dark_oak_planks"
+      },
+      "name": "stripped_dark_oak_crate"
+    },
+    "stripped_oak_crate": {
+      "map": {
+        "crate_frame": "stripped_oak_log",
+        "crate_center": "oak_planks"
+      },
+      "name": "stripped_oak_crate"
+    },
+    "stripped_jungle_crate": {
+      "map": {
+        "crate_frame": "stripped_jungle_log",
+        "crate_center": "jungle_planks"
+      },
+      "name": "stripped_jungle_crate"
+    },
+    "stripped_spruce_crate": {
+      "map": {
+        "crate_frame": "stripped_spruce_log",
+        "crate_center": "spruce_planks"
+      },
+      "name": "stripped_spruce_crate"
+    },
+    "granite_crate": {
+      "map": {
+        "crate_frame": "granite",
+        "crate_center": "polished_granite"
+      },
+      "name": "granite_crate"
+    },
+    "diorite_crate": {
+      "map": {
+        "crate_frame": "diorite",
+        "crate_center": "polished_diorite"
+      },
+      "name": "diorite_crate"
+    },
+    "andesite_crate": {
+      "map": {
+        "crate_frame": "andesite",
+        "crate_center": "polished_andesite"
+      },
+      "name": "andesite_crate"
+    },
+    "stone_crate": {
+      "map": {
+        "crate_frame": "stone",
+        "crate_center": "smooth_stone"
+      },
+      "name": "stone_crate"
+    },
+    "slime_crate": {
+      "map": {
+        "crate_frame": "slime_block",
+        "crate_center": "slime_block"
+      },
+      "name": "slime_crate"
+    },
+    "glass_crate": {
+      "map": {
+        "crate_frame": "glass",
+        "crate_center": "glass"
+      },
+      "name": "glass_crate"
+    },
+    "prismarine_crate": {
+      "map": {
+        "crate_frame": "prismarine_bricks",
+        "crate_center": "prismarine"
+      },
+      "name": "prismarine_crate"
+    },
+    "dark_prismarine_crate": {
+      "map": {
+        "crate_frame": "dark_prismarine",
+        "crate_center": "dark_prismarine"
+      },
+      "name": "dark_prismarine_crate"
+    },
+    "honeycomb_crate": {
+      "map": {
+        "crate_frame": "honeycomb_block",
+        "crate_center": "honeycomb_block"
+      },
+      "name": "honeycomb_crate"
+    },
+    "honey_crate": {
+      "map": {
+        "crate_frame": "honey_block_top",
+        "crate_center": "honey_block_side"
+      },
+      "name": "honey_crate"
+    },
+    "lapis_crate": {
+      "map": {
+        "crate_frame": "blue_concrete",
+        "crate_center": "lapis_block"
+      },
+      "name": "lapis_crate"
+    },
+    "gold_crate": {
+      "map": {
+        "crate_frame": "yellow_concrete",
+        "crate_center": "gold_block"
+      },
+      "name": "gold_crate"
+    },
+    "iron_crate": {
+      "map": {
+        "crate_frame": "white_concrete",
+        "crate_center": "iron_block"
+      },
+      "name": "iron_crate"
+    },
+    "diamond_crate": {
+      "map": {
+        "crate_frame": "light_blue_concrete",
+        "crate_center": "diamond_block"
+      },
+      "name": "diamond_crate"
+    },
+    "emerald_crate": {
+      "map": {
+        "crate_frame": "lime_concrete",
+        "crate_center": "emerald_block"
+      },
+      "name": "emerald_crate"
+    },
+    "magma_crate": {
+      "map": {
+        "crate_frame": "nether_bricks",
+        "crate_center": "magma"
+      },
+      "name": "magma_crate"
+    },
+    "obsidian_crate": {
+      "map": {
+        "crate_frame": "black_concrete",
+        "crate_center": "obsidian"
+      },
+      "name": "obsidian_crate"
+    },
+    "red_nether_bricks_crate": {
+      "map": {
+        "crate_frame": "red_nether_bricks",
+        "crate_center": "nether_wart_block"
+      },
+      "name": "red_nether_bricks_crate"
+    },
+    "redstone_crate": {
+      "map": {
+        "crate_frame": "red_concrete",
+        "crate_center": "redstone_block"
+      },
+      "name": "redstone_crate"
+    },
+    "coal_crate": {
+      "map": {
+        "crate_frame": "black_concrete",
+        "crate_center": "coal_block"
+      },
+      "name": "coal_crate"
+    },
+    "white_terracotta_crate": {
+      "map": {
+        "crate_frame": "white_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "white_terracotta_crate"
+    },
+    "orange_terracotta_crate": {
+      "map": {
+        "crate_frame": "orange_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "orange_terracotta_crate"
+    },
+    "magenta_terracotta_crate": {
+      "map": {
+        "crate_frame": "magenta_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "magenta_terracotta_crate"
+    },
+    "light_blue_terracotta_crate": {
+      "map": {
+        "crate_frame": "light_blue_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "light_blue_terracotta_crate"
+    },
+    "yellow_terracotta_crate": {
+      "map": {
+        "crate_frame": "yellow_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "yellow_terracotta_crate"
+    },
+    "lime_terracotta_crate": {
+      "map": {
+        "crate_frame": "lime_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "lime_terracotta_crate"
+    },
+    "pink_terracotta_crate": {
+      "map": {
+        "crate_frame": "pink_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "pink_terracotta_crate"
+    },
+    "gray_terracotta_crate": {
+      "map": {
+        "crate_frame": "gray_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "gray_terracotta_crate"
+    },
+    "light_gray_terracotta_crate": {
+      "map": {
+        "crate_frame": "light_gray_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "light_gray_terracotta_crate"
+    },
+    "cyan_terracotta_crate": {
+      "map": {
+        "crate_frame": "cyan_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "cyan_terracotta_crate"
+    },
+    "purple_terracotta_crate": {
+      "map": {
+        "crate_frame": "purple_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "purple_terracotta_crate"
+    },
+    "blue_terracotta_crate": {
+      "map": {
+        "crate_frame": "blue_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "blue_terracotta_crate"
+    },
+    "brown_terracotta_crate": {
+      "map": {
+        "crate_frame": "brown_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "brown_terracotta_crate"
+    },
+    "green_terracotta_crate": {
+      "map": {
+        "crate_frame": "green_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "green_terracotta_crate"
+    },
+    "red_terracotta_crate": {
+      "map": {
+        "crate_frame": "red_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "red_terracotta_crate"
+    },
+    "black_terracotta_crate": {
+      "map": {
+        "crate_frame": "black_terracotta",
+        "crate_center": "terracotta"
+      },
+      "name": "black_terracotta_crate"
+    },
+    "iron_obsidian_crate": {
+      "map": {
+        "crate_frame": "obsidian",
+        "crate_center": "iron_block"
+      },
+      "name": "iron_obsidian_crate"
+    },
+    "gold_obsidian_crate": {
+      "map": {
+        "crate_frame": "obsidian",
+        "crate_center": "gold_block"
+      },
+      "name": "gold_obsidian_crate"
+    },
+    "diamond_obsidian_crate": {
+      "map": {
+        "crate_frame": "obsidian",
+        "crate_center": "diamond_block"
+      },
+      "name": "diamond_obsidian_crate"
+    },
+    "emerald_obsidian_crate": {
+      "map": {
+        "crate_frame": "obsidian",
+        "crate_center": "emerald_block"
+      },
+      "name": "emerald_obsidian_crate"
+    }
+  }
+}

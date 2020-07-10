@@ -1,0 +1,49 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:OakCrate"
+      },
+      {
+        "value": "CUSTOM:AcaciaCrate"
+      },
+      {
+        "value": "CUSTOM:BirchCrate"
+      },
+      {
+        "value": "CUSTOM:DarkOakCrate"
+      },
+      {
+        "value": "CUSTOM:JungleCrate"
+      },
+      {
+        "value": "CUSTOM:SpruceCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedAcaciaCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedBirchCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedDarkOakCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedJungleCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedOakCrate"
+      },
+      {
+        "value": "CUSTOM:StrippedSpruceCrate"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "chests/wooden",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:forge:ingots/iron"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:forge:ingots/iron"
+      },
+      {
+        "value": "TAG:forge:storage_blocks/iron"
+      },
+      {
+        "value": "TAG:forge:ingots/iron"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:forge:stone"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IronCrateUpgrade"
+    },
+    "name": "iron_crate_upgrade_recipe",
+    "namespace": "mod"
+  }
+}

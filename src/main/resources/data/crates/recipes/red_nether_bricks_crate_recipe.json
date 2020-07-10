@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:red_nether_bricks"
+    },
+    "1": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "2": {
+      "item": "minecraft:red_nether_bricks"
+    },
+    "3": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "5": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "6": {
+      "item": "minecraft:red_nether_bricks"
+    },
+    "7": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "8": {
+      "item": "minecraft:red_nether_bricks"
+    }
+  },
+  "result": {
+    "item": "crates:red_nether_bricks_crate",
+    "count": 1
+  }
+}

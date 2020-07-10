@@ -1,0 +1,9 @@
+{
+  "parent": "crates:custom/crate",
+  "textures": {
+    "all": "minecraft:block/obsidian",
+    "particle": "minecraft:block/obsidian",
+    "crate_frame": "minecraft:block/black_concrete",
+    "crate_center": "minecraft:block/obsidian"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:WhiteTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:OrangeTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:MagentaTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:LightBlueTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:YellowTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:LimeTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:PinkTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:GrayTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:LightGrayTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:CyanTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:PurpleTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:BlueTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:BrownTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:GreenTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:RedTerracottaCrate"
+      },
+      {
+        "value": "CUSTOM:BlackTerracottaCrate"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "terracotta_crates",
+    "namespace": "mod"
+  }
+}

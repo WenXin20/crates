@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:lime_concrete"
+    },
+    "1": {
+      "tag": "forge:gems/emerald"
+    },
+    "2": {
+      "item": "minecraft:lime_concrete"
+    },
+    "3": {
+      "tag": "forge:gems/emerald"
+    },
+    "5": {
+      "tag": "forge:gems/emerald"
+    },
+    "6": {
+      "item": "minecraft:lime_concrete"
+    },
+    "7": {
+      "tag": "forge:storage_blocks/emerald"
+    },
+    "8": {
+      "item": "minecraft:lime_concrete"
+    }
+  },
+  "result": {
+    "item": "crates:emerald_crate",
+    "count": 1
+  }
+}

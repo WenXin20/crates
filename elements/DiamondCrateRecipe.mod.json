@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CONCRETE#3"
+      },
+      {
+        "value": "TAG:forge:gems/diamond"
+      },
+      {
+        "value": "Blocks.CONCRETE#3"
+      },
+      {
+        "value": "TAG:forge:gems/diamond"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:forge:gems/diamond"
+      },
+      {
+        "value": "Blocks.CONCRETE#3"
+      },
+      {
+        "value": "TAG:forge:storage_blocks/diamond"
+      },
+      {
+        "value": "Blocks.CONCRETE#3"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DiamondCrate"
+    },
+    "name": "diamond_crate_recipe",
+    "namespace": "mod"
+  }
+}

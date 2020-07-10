@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:polished_granite"
+    },
+    "1": {
+      "item": "minecraft:granite"
+    },
+    "2": {
+      "item": "minecraft:polished_granite"
+    },
+    "3": {
+      "item": "minecraft:granite"
+    },
+    "5": {
+      "item": "minecraft:granite"
+    },
+    "6": {
+      "item": "minecraft:polished_granite"
+    },
+    "7": {
+      "item": "minecraft:granite"
+    },
+    "8": {
+      "item": "minecraft:polished_granite"
+    }
+  },
+  "result": {
+    "item": "crates:granite_crate",
+    "count": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:prismarine_bricks"
+    },
+    "1": {
+      "item": "minecraft:prismarine"
+    },
+    "2": {
+      "item": "minecraft:prismarine_bricks"
+    },
+    "3": {
+      "item": "minecraft:prismarine"
+    },
+    "5": {
+      "item": "minecraft:prismarine"
+    },
+    "6": {
+      "item": "minecraft:prismarine_bricks"
+    },
+    "7": {
+      "item": "minecraft:prismarine"
+    },
+    "8": {
+      "item": "minecraft:prismarine_bricks"
+    }
+  },
+  "result": {
+    "item": "crates:prismarine_crate",
+    "count": 1
+  }
+}

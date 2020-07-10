@@ -1,0 +1,30 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "forge:ingots/iron"
+    },
+    "3": {
+      "tag": "forge:ingots/iron"
+    },
+    "4": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "5": {
+      "tag": "forge:ingots/iron"
+    },
+    "7": {
+      "tag": "forge:stone"
+    }
+  },
+  "result": {
+    "item": "crates:iron_crate_upgrade",
+    "count": 1
+  }
+}
