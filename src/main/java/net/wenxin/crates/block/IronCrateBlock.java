@@ -110,7 +110,7 @@ public class IronCrateBlock extends CratesModElements.ModElement implements IWat
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 6f).lightValue(0).harvestLevel(1)

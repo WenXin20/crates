@@ -109,7 +109,7 @@ public class BrownTerracottaCrateBlock extends CratesModElements.ModElement impl
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.25f, 4.2f).lightValue(0).harvestLevel(1)

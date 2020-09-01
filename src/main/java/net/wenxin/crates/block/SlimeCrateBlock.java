@@ -111,7 +111,7 @@ public class SlimeCrateBlock extends CratesModElements.ModElement implements IWa
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getTranslucent());
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends Block implements IWaterLoggable {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.SLIME).hardnessAndResistance(2f, 2f).lightValue(0).notSolid());
