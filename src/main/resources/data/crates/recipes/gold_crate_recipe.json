@@ -11,22 +11,22 @@
       "item": "minecraft:yellow_concrete"
     },
     "1": {
-      "item": "minecraft:gold_ingot"
+      "tag": "forge:ingots/gold"
     },
     "2": {
       "item": "minecraft:yellow_concrete"
     },
     "3": {
-      "item": "minecraft:gold_ingot"
+      "tag": "forge:ingots/gold"
     },
     "5": {
-      "item": "minecraft:gold_ingot"
+      "tag": "forge:ingots/gold"
     },
     "6": {
       "item": "minecraft:yellow_concrete"
     },
     "7": {
-      "item": "minecraft:gold_block"
+      "tag": "forge:ingots/gold"
     },
     "8": {
       "item": "minecraft:yellow_concrete"

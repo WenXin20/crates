@@ -3,7 +3,7 @@ package net.wenxin.crates.block;
 
 import net.wenxin.crates.procedures.CrateOpenSoundProcedure;
 import net.wenxin.crates.itemgroup.CratesTabItemGroup;
-import net.wenxin.crates.gui.CrateGUI2Gui;
+import net.wenxin.crates.gui.CrateGUIDiamondGui;
 import net.wenxin.crates.CratesPreciseSelectionBox;
 import net.wenxin.crates.CratesModElements;
 
@@ -120,13 +120,6 @@ public class DiamondCrateBlock extends CratesModElements.ModElement implements I
 		}
 
 		@Override
-		@OnlyIn(Dist.CLIENT)
-		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A7o\u00A7bWorks as a beacon base!"));
-		}
-
-		@Override
 		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return false;
 		}
@@ -211,7 +204,7 @@ public class DiamondCrateBlock extends CratesModElements.ModElement implements I
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new CrateGUI2Gui.GuiContainerMod(id, inventory,
+						return new CrateGUIDiamondGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -280,7 +273,7 @@ public class DiamondCrateBlock extends CratesModElements.ModElement implements I
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(33, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(65, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -343,7 +336,7 @@ public class DiamondCrateBlock extends CratesModElements.ModElement implements I
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new CrateGUI2Gui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new CrateGUIDiamondGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override

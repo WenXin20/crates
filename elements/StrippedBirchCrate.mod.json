@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "block",
   "definition": {
     "texture": "birch_planks",
@@ -34,6 +34,7 @@
       "value": ""
     },
     "dropAmount": 1,
+    "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

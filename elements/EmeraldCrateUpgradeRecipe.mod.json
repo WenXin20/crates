@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -22,13 +22,13 @@
         "value": "TAG:forge:gems/emerald"
       },
       {
-        "value": "TAG:forge:storage_blocks/emerald"
+        "value": "TAG:forge:gems/emerald"
       },
       {
         "value": "TAG:forge:gems/emerald"
       },
       {
-        "value": "Blocks.BARRIER"
+        "value": ""
       },
       {
         "value": "TAG:forge:gems/diamond"

@@ -1,11 +1,11 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "emerald_crate_upgrade",
     "customModelName": "Normal",
-    "name": "Emerald Crate Upgrade §4(WIP)",
+    "name": "Emerald Crate Upgrade",
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },
@@ -20,7 +20,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§o§bUpgrade from diamond to emerald"
+      "§o§bFrom diamond to emerald"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

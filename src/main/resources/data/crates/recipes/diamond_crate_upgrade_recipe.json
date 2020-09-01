@@ -4,7 +4,7 @@
   "pattern": [
     " 1 ",
     "345",
-    "67 "
+    " 7 "
   ],
   "key": {
     "1": {
@@ -14,13 +14,10 @@
       "tag": "forge:gems/diamond"
     },
     "4": {
-      "tag": "forge:storage_blocks/diamond"
+      "tag": "forge:gems/diamond"
     },
     "5": {
       "tag": "forge:gems/diamond"
-    },
-    "6": {
-      "item": "minecraft:barrier"
     },
     "7": {
       "tag": "forge:ingots/gold"

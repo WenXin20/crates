@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -31,7 +31,7 @@
         "value": "Blocks.CONCRETE#5"
       },
       {
-        "value": "TAG:forge:storage_blocks/emerald"
+        "value": "TAG:forge:gems/emerald"
       },
       {
         "value": "Blocks.CONCRETE#5"

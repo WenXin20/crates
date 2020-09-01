@@ -20,6 +20,7 @@ import net.minecraft.advancements.Advancement;
 
 import java.util.Map;
 import java.util.Iterator;
+import java.util.HashMap;
 
 @CratesModElements.ModElement.Tag
 public class GrantCratesAdvancementProcedure extends CratesModElements.ModElement {
@@ -30,7 +31,8 @@ public class GrantCratesAdvancementProcedure extends CratesModElements.ModElemen
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure GrantCratesAdvancement!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure GrantCratesAdvancement!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -60,7 +62,7 @@ public class GrantCratesAdvancementProcedure extends CratesModElements.ModElemen
 		double j = entity.getPosY();
 		double k = entity.getPosZ();
 		World world = entity.world;
-		java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
+		Map<String, Object> dependencies = new HashMap<>();
 		dependencies.put("x", i);
 		dependencies.put("y", j);
 		dependencies.put("z", k);

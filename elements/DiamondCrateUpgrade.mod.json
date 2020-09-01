@@ -1,11 +1,11 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "diamond_crate_upgrade",
     "customModelName": "Normal",
-    "name": "Diamond Crate Upgrade §4(WIP)",
+    "name": "Diamond Crate Upgrade",
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },
@@ -20,7 +20,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§bUpgrade from gold to diamond"
+      "§bFrom gold to diamond"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

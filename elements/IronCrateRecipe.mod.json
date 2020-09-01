@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -13,25 +13,25 @@
         "value": "Blocks.CONCRETE#0"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:forge:ingots/iron"
       },
       {
         "value": "Blocks.CONCRETE#0"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:forge:ingots/iron"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:forge:ingots/iron"
       },
       {
         "value": "Blocks.CONCRETE#0"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "TAG:forge:ingots/iron"
       },
       {
         "value": "Blocks.CONCRETE#0"

@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -13,25 +13,25 @@
         "value": "Blocks.CONCRETE#4"
       },
       {
-        "value": "Items.GOLD_INGOT"
+        "value": "TAG:forge:ingots/gold"
       },
       {
         "value": "Blocks.CONCRETE#4"
       },
       {
-        "value": "Items.GOLD_INGOT"
+        "value": "TAG:forge:ingots/gold"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.GOLD_INGOT"
+        "value": "TAG:forge:ingots/gold"
       },
       {
         "value": "Blocks.CONCRETE#4"
       },
       {
-        "value": "Blocks.GOLD_BLOCK"
+        "value": "TAG:forge:ingots/gold"
       },
       {
         "value": "Blocks.CONCRETE#4"

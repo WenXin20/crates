@@ -383,10 +383,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -1137,15 +1133,6 @@
       }
     },
     {
-      "name": "CrateGUIIron",
-      "type": "gui",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "crate_gui_iron"
-    },
-    {
       "name": "CrateGUIGold",
       "type": "gui",
       "sortid": 127,
@@ -1374,15 +1361,6 @@
       "registry_name": "gold_obsidian_crate"
     },
     {
-      "name": "CrateGUIDiamond",
-      "type": "gui",
-      "sortid": 133,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "crate_gui_diamond"
-    },
-    {
       "name": "DiamondObsidianCrate",
       "type": "block",
       "sortid": 31,
@@ -1435,15 +1413,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "emerald_crate_upgrade_recipe"
-    },
-    {
-      "name": "CrateGUIEmerald",
-      "type": "gui",
-      "sortid": 138,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "crate_gui_emerald"
     },
     {
       "name": "GoldObsidianCrateUpgrade",
@@ -1993,6 +1962,596 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "black_terracotta_crate_recipe_2"
+    },
+    {
+      "name": "ButtonCloseGUI",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "button_close_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoalCrateRecipe",
+      "type": "recipe",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_crate_recipe"
+    },
+    {
+      "name": "CoalCrateFuel",
+      "type": "fuel",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_crate_fuel"
+    },
+    {
+      "name": "CrateGUIIron",
+      "type": "gui",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_iron"
+    },
+    {
+      "name": "CrateGUIDiamond",
+      "type": "gui",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_diamond"
+    },
+    {
+      "name": "CrateGUIEmerald",
+      "type": "gui",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "crate_gui_emerald"
+    },
+    {
+      "name": "DyeTerracottaCrateOrange",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_orange",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateWhite",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_white",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateMagenta",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_magenta",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateLightBlue",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_light_blue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateYellow",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_yellow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateLime",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_lime",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCratePink",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_pink",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateGray",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_gray",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateLightGray",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_light_gray",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateCyan",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_cyan",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCratePurple",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_purple",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateBlue",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_blue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateBrown",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_brown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateGreen",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_green",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateRed",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_red",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DyeTerracottaCrateBlack",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dye_terracotta_crate_black",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2004,8 +2563,8 @@
       "block.crates.iron_crate": "Iron Crate",
       "block.crates.red_terracotta_crate": "Red Terracotta Crate",
       "block.crates.stripped_dark_oak_crate": "Stripped Dark Oak Crate",
-      "block.crates.yellow_terracotta_crate": "Yellow Terracotta Crate",
       "block.crates.orange_terracotta_crate": "Orange Terracotta Crate",
+      "block.crates.yellow_terracotta_crate": "Yellow Terracotta Crate",
       "block.crates.acacia_crate": "Acacia Crate",
       "block.crates.oak_crate": "Oak Crate",
       "block.crates.stripped_acacia_crate": "Stripped Acacia Crate",
@@ -2039,14 +2598,14 @@
       "block.crates.stripped_oak_crate": "Stripped Oak Crate",
       "itemGroup.tabcrates_tab": "Crates",
       "block.crates.purple_terracotta_crate": "Purple Terracotta Crate",
-      "item.crates.diamond_crate_upgrade": "Diamond Crate Upgrade §4(WIP)",
+      "item.crates.diamond_crate_upgrade": "Diamond Crate Upgrade",
       "block.crates.stripped_jungle_crate": "Stripped Jungle Crate",
       "block.crates.gold_obsidian_crate": "Gold Obsidian Crate",
       "block.crates.pink_terracotta_crate": "Pink Terracotta Crate",
       "block.crates.magma_crate": "Magma Crate",
       "block.crates.blue_terracotta_crate": "Blue Terracotta Crate",
       "block.crates.honeycomb_crate": "Honeycomb Crate",
-      "item.crates.emerald_crate_upgrade": "Emerald Crate Upgrade §4(WIP)",
+      "item.crates.emerald_crate_upgrade": "Emerald Crate Upgrade",
       "item.crates.gold_crate_upgrade": "Gold Crate Upgrade",
       "block.crates.gray_terracotta_crate": "Gray Terracotta Crate",
       "block.crates.honey_crate": "Honey Crate",
@@ -2079,5 +2638,5 @@
     "modElementsPackage": "net.wenxin.crates",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000428114
+  "mcreatorVersion": 202000535716
 }

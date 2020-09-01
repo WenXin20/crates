@@ -1,0 +1,39 @@
+{
+  "group": "crates",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:black_concrete"
+    },
+    "1": {
+      "item": "minecraft:coal"
+    },
+    "2": {
+      "item": "minecraft:black_concrete"
+    },
+    "3": {
+      "item": "minecraft:coal"
+    },
+    "5": {
+      "item": "minecraft:coal"
+    },
+    "6": {
+      "item": "minecraft:black_concrete"
+    },
+    "7": {
+      "item": "minecraft:coal"
+    },
+    "8": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "result": {
+    "item": "crates:coal_crate",
+    "count": 1
+  }
+}

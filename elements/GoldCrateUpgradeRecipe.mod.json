@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -22,7 +22,7 @@
         "value": "TAG:forge:ingots/gold"
       },
       {
-        "value": "TAG:forge:storage_blocks/gold"
+        "value": "TAG:forge:ingots/gold"
       },
       {
         "value": "TAG:forge:ingots/gold"

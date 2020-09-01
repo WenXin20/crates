@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "tag",
   "definition": {
     "type": "Blocks",
@@ -7,6 +7,18 @@
     "blocks": [
       {
         "value": "CUSTOM:ObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:IronObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:GoldObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:DiamondObsidianCrate"
+      },
+      {
+        "value": "CUSTOM:EmeraldObsidianCrate"
       }
     ],
     "functions": [],

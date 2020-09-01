@@ -60,7 +60,7 @@ public class IronCrateUpgradeItem extends CratesModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A7bUpgrade any crate to iron"));
+			list.add(new StringTextComponent("\u00A7bAny crate to iron"));
 		}
 
 		@Override

@@ -16,7 +16,8 @@ public class BlockDamageEntityProcedure extends CratesModElements.ModElement {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure BlockDamageEntity!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure BlockDamageEntity!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

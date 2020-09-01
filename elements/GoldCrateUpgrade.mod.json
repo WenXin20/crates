@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -20,7 +20,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§bUpgrade from iron to gold"
+      "§bFrom iron to gold"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

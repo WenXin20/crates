@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "crates:obsidian_crate"
+    "crates:obsidian_crate",
+    "crates:iron_obsidian_crate",
+    "crates:gold_obsidian_crate",
+    "crates:diamond_obsidian_crate",
+    "crates:emerald_obsidian_crate"
   ]
 }

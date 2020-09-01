@@ -4,6 +4,7 @@ package net.wenxin.crates.gui;
 import org.lwjgl.opengl.GL11;
 
 import net.wenxin.crates.procedures.CrateCloseGUIProcedure;
+import net.wenxin.crates.procedures.ButtonCloseGUIProcedure;
 import net.wenxin.crates.CratesModElements;
 import net.wenxin.crates.CratesMod;
 
@@ -48,7 +49,7 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public CrateGUIEmeraldGui(CratesModElements instance) {
-		super(instance, 138);
+		super(instance, 182);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -83,7 +84,7 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(36);
+			this.internal = new ItemStackHandler(78);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -121,85 +122,169 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 17) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 16) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 17) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 16) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 17) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 16) {
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 17) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 16) {
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 98, 17) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 16) {
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 116, 17) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 98, 16) {
 			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 134, 17) {
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 116, 16) {
 			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 152, 17) {
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 134, 16) {
 			}));
-			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 170, 17) {
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 152, 16) {
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 188, 17) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 170, 16) {
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 206, 17) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 188, 16) {
 			}));
-			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 224, 17) {
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 206, 16) {
 			}));
-			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 26, 35) {
+			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 224, 16) {
 			}));
-			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 44, 35) {
+			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 8, 34) {
 			}));
-			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 62, 35) {
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 26, 34) {
 			}));
-			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 80, 35) {
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 44, 34) {
 			}));
-			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 98, 35) {
+			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 62, 34) {
 			}));
-			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 116, 35) {
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 80, 34) {
 			}));
-			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 134, 35) {
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 98, 34) {
 			}));
-			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 152, 35) {
+			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 116, 34) {
 			}));
-			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 170, 35) {
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 134, 34) {
 			}));
-			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 188, 35) {
+			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 152, 34) {
 			}));
-			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 206, 35) {
+			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 170, 34) {
 			}));
-			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 224, 35) {
+			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 188, 34) {
 			}));
-			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 26, 53) {
+			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 206, 34) {
 			}));
-			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 44, 53) {
+			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 224, 34) {
 			}));
-			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 62, 53) {
+			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 8, 52) {
 			}));
-			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 80, 53) {
+			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 26, 52) {
 			}));
-			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 98, 53) {
+			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 44, 52) {
 			}));
-			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 116, 53) {
+			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 62, 52) {
 			}));
-			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 134, 53) {
+			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 80, 52) {
 			}));
-			this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 152, 53) {
+			this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 98, 52) {
 			}));
-			this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 170, 53) {
+			this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 116, 52) {
 			}));
-			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 188, 53) {
+			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 134, 52) {
 			}));
-			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 206, 53) {
+			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 152, 52) {
 			}));
-			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 224, 53) {
+			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 170, 52) {
+			}));
+			this.customSlots.put(36, this.addSlot(new SlotItemHandler(internal, 36, 188, 52) {
+			}));
+			this.customSlots.put(37, this.addSlot(new SlotItemHandler(internal, 37, 206, 52) {
+			}));
+			this.customSlots.put(38, this.addSlot(new SlotItemHandler(internal, 38, 224, 52) {
+			}));
+			this.customSlots.put(39, this.addSlot(new SlotItemHandler(internal, 39, 8, 70) {
+			}));
+			this.customSlots.put(40, this.addSlot(new SlotItemHandler(internal, 40, 26, 70) {
+			}));
+			this.customSlots.put(41, this.addSlot(new SlotItemHandler(internal, 41, 44, 70) {
+			}));
+			this.customSlots.put(42, this.addSlot(new SlotItemHandler(internal, 42, 62, 70) {
+			}));
+			this.customSlots.put(43, this.addSlot(new SlotItemHandler(internal, 43, 80, 70) {
+			}));
+			this.customSlots.put(44, this.addSlot(new SlotItemHandler(internal, 44, 98, 70) {
+			}));
+			this.customSlots.put(45, this.addSlot(new SlotItemHandler(internal, 45, 116, 70) {
+			}));
+			this.customSlots.put(46, this.addSlot(new SlotItemHandler(internal, 46, 134, 70) {
+			}));
+			this.customSlots.put(47, this.addSlot(new SlotItemHandler(internal, 47, 152, 70) {
+			}));
+			this.customSlots.put(48, this.addSlot(new SlotItemHandler(internal, 48, 170, 70) {
+			}));
+			this.customSlots.put(49, this.addSlot(new SlotItemHandler(internal, 49, 188, 70) {
+			}));
+			this.customSlots.put(50, this.addSlot(new SlotItemHandler(internal, 50, 206, 70) {
+			}));
+			this.customSlots.put(51, this.addSlot(new SlotItemHandler(internal, 51, 224, 70) {
+			}));
+			this.customSlots.put(52, this.addSlot(new SlotItemHandler(internal, 52, 8, 88) {
+			}));
+			this.customSlots.put(53, this.addSlot(new SlotItemHandler(internal, 53, 26, 88) {
+			}));
+			this.customSlots.put(54, this.addSlot(new SlotItemHandler(internal, 54, 44, 88) {
+			}));
+			this.customSlots.put(55, this.addSlot(new SlotItemHandler(internal, 55, 62, 88) {
+			}));
+			this.customSlots.put(56, this.addSlot(new SlotItemHandler(internal, 56, 80, 88) {
+			}));
+			this.customSlots.put(57, this.addSlot(new SlotItemHandler(internal, 57, 98, 88) {
+			}));
+			this.customSlots.put(58, this.addSlot(new SlotItemHandler(internal, 58, 116, 88) {
+			}));
+			this.customSlots.put(59, this.addSlot(new SlotItemHandler(internal, 59, 134, 88) {
+			}));
+			this.customSlots.put(60, this.addSlot(new SlotItemHandler(internal, 60, 152, 88) {
+			}));
+			this.customSlots.put(61, this.addSlot(new SlotItemHandler(internal, 61, 170, 88) {
+			}));
+			this.customSlots.put(62, this.addSlot(new SlotItemHandler(internal, 62, 188, 88) {
+			}));
+			this.customSlots.put(63, this.addSlot(new SlotItemHandler(internal, 63, 206, 88) {
+			}));
+			this.customSlots.put(64, this.addSlot(new SlotItemHandler(internal, 64, 224, 88) {
+			}));
+			this.customSlots.put(65, this.addSlot(new SlotItemHandler(internal, 65, 8, 106) {
+			}));
+			this.customSlots.put(66, this.addSlot(new SlotItemHandler(internal, 66, 26, 106) {
+			}));
+			this.customSlots.put(67, this.addSlot(new SlotItemHandler(internal, 67, 44, 106) {
+			}));
+			this.customSlots.put(68, this.addSlot(new SlotItemHandler(internal, 68, 62, 106) {
+			}));
+			this.customSlots.put(69, this.addSlot(new SlotItemHandler(internal, 69, 80, 106) {
+			}));
+			this.customSlots.put(70, this.addSlot(new SlotItemHandler(internal, 70, 98, 106) {
+			}));
+			this.customSlots.put(71, this.addSlot(new SlotItemHandler(internal, 71, 116, 106) {
+			}));
+			this.customSlots.put(72, this.addSlot(new SlotItemHandler(internal, 72, 134, 106) {
+			}));
+			this.customSlots.put(73, this.addSlot(new SlotItemHandler(internal, 73, 152, 106) {
+			}));
+			this.customSlots.put(74, this.addSlot(new SlotItemHandler(internal, 74, 170, 106) {
+			}));
+			this.customSlots.put(75, this.addSlot(new SlotItemHandler(internal, 75, 188, 106) {
+			}));
+			this.customSlots.put(76, this.addSlot(new SlotItemHandler(internal, 76, 206, 106) {
+			}));
+			this.customSlots.put(77, this.addSlot(new SlotItemHandler(internal, 77, 224, 106) {
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 46 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 36 + 8 + sj * 18, 52 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 46 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 36 + 8 + si * 18, 52 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -218,18 +303,18 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 36) {
-					if (!this.mergeItemStack(itemstack1, 36, this.inventorySlots.size(), true)) {
+				if (index < 78) {
+					if (!this.mergeItemStack(itemstack1, 78, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 36, false)) {
-					if (index < 36 + 27) {
-						if (!this.mergeItemStack(itemstack1, 36 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 78, false)) {
+					if (index < 78 + 27) {
+						if (!this.mergeItemStack(itemstack1, 78 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 36, 36 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 78, 78 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -332,13 +417,25 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 		@Override
 		public void onContainerClosed(PlayerEntity playerIn) {
 			super.onContainerClosed(playerIn);
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				CrateCloseGUIProcedure.executeProcedure($_dependencies);
+			}
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
+						if (j == 77)
+							continue;
 						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 					}
 				} else {
 					for (int i = 0; i < internal.getSlots(); ++i) {
+						if (i == 77)
+							continue;
 						playerIn.inventory.placeItemBackInInventory(playerIn.world,
 								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 					}
@@ -366,8 +463,8 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 			this.y = container.y;
 			this.z = container.z;
 			this.entity = container.entity;
-			this.xSize = 267;
-			this.ySize = 166;
+			this.xSize = 248;
+			this.ySize = 218;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("crates:textures/crate_gui_emerald.png");
 		@Override
@@ -379,11 +476,11 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -402,8 +499,8 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Crate", 52, 6, -13421773);
-			this.font.drawString("Inventory", 51, 72, -13421773);
+			this.font.drawString(this.title.getFormattedText(), 8, 5, 4210752);
+			this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8, 125, 4210752);
 		}
 
 		@Override
@@ -416,7 +513,7 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + -20, this.guiTop + 1, 20, 20, "X", e -> {
+			this.addButton(new Button(this.guiLeft + -21, this.guiTop + 0, 20, 20, "X", e -> {
 				CratesMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
@@ -513,11 +610,7 @@ public class CrateGUIEmeraldGui extends CratesModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				CrateCloseGUIProcedure.executeProcedure($_dependencies);
+				ButtonCloseGUIProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

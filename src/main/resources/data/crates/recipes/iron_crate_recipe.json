@@ -11,22 +11,22 @@
       "item": "minecraft:white_concrete"
     },
     "1": {
-      "item": "minecraft:iron_ingot"
+      "tag": "forge:ingots/iron"
     },
     "2": {
       "item": "minecraft:white_concrete"
     },
     "3": {
-      "item": "minecraft:iron_ingot"
+      "tag": "forge:ingots/iron"
     },
     "5": {
-      "item": "minecraft:iron_ingot"
+      "tag": "forge:ingots/iron"
     },
     "6": {
       "item": "minecraft:white_concrete"
     },
     "7": {
-      "item": "minecraft:iron_block"
+      "tag": "forge:ingots/iron"
     },
     "8": {
       "item": "minecraft:white_concrete"

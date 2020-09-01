@@ -123,7 +123,7 @@ public class IronObsidianCrateBlock extends CratesModElements.ModElement impleme
 		@OnlyIn(Dist.CLIENT)
 		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A7bWorks as a beacon base!"));
+			list.add(new StringTextComponent("\u00A7o\u00A7bBlast proof, dragon immune"));
 		}
 
 		@Override
@@ -280,7 +280,7 @@ public class IronObsidianCrateBlock extends CratesModElements.ModElement impleme
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(36, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(39, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}

@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -31,7 +31,7 @@
         "value": "Blocks.CONCRETE#3"
       },
       {
-        "value": "TAG:forge:storage_blocks/diamond"
+        "value": "TAG:forge:gems/diamond"
       },
       {
         "value": "Blocks.CONCRETE#3"

@@ -52,7 +52,7 @@ public class DiamondCrateUpgradeItem extends CratesModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u00A7bUpgrade from gold to diamond"));
+			list.add(new StringTextComponent("\u00A7bFrom gold to diamond"));
 		}
 	}
 }

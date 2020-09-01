@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 11,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:PrismarineCrate"
+      "value": "CUSTOM:ObsidianCrate"
     },
     "name": "obsidian_crate_recipe",
     "namespace": "mod"

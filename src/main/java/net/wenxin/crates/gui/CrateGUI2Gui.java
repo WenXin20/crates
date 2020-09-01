@@ -4,6 +4,7 @@ package net.wenxin.crates.gui;
 import org.lwjgl.opengl.GL11;
 
 import net.wenxin.crates.procedures.CrateCloseGUIProcedure;
+import net.wenxin.crates.procedures.ButtonCloseGUIProcedure;
 import net.wenxin.crates.CratesModElements;
 import net.wenxin.crates.CratesMod;
 
@@ -317,6 +318,15 @@ public class CrateGUI2Gui extends CratesModElements.ModElement {
 		@Override
 		public void onContainerClosed(PlayerEntity playerIn) {
 			super.onContainerClosed(playerIn);
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				CrateCloseGUIProcedure.executeProcedure($_dependencies);
+			}
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
@@ -493,7 +503,7 @@ public class CrateGUI2Gui extends CratesModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				CrateCloseGUIProcedure.executeProcedure($_dependencies);
+				ButtonCloseGUIProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}
