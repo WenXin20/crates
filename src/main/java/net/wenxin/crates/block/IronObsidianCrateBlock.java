@@ -90,7 +90,7 @@ public class IronObsidianCrateBlock extends CratesModElements.ModElement impleme
 	@ObjectHolder("crates:iron_obsidian_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public IronObsidianCrateBlock(CratesModElements instance) {
-		super(instance, 29);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

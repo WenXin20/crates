@@ -88,7 +88,7 @@ public class RedstoneCrateBlock extends CratesModElements.ModElement implements 
 	@ObjectHolder("crates:redstone_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public RedstoneCrateBlock(CratesModElements instance) {
-		super(instance, 87);
+		super(instance, 34);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

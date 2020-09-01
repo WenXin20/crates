@@ -88,7 +88,7 @@ public class GrayTerracottaCrateBlock extends CratesModElements.ModElement imple
 	@ObjectHolder("crates:gray_terracotta_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GrayTerracottaCrateBlock(CratesModElements instance) {
-		super(instance, 149);
+		super(instance, 43);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -90,7 +90,7 @@ public class GoldCrateBlock extends CratesModElements.ModElement implements IWat
 	@ObjectHolder("crates:gold_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GoldCrateBlock(CratesModElements instance) {
-		super(instance, 72);
+		super(instance, 25);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

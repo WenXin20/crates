@@ -90,7 +90,7 @@ public class EmeraldCrateBlock extends CratesModElements.ModElement implements I
 	@ObjectHolder("crates:emerald_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public EmeraldCrateBlock(CratesModElements instance) {
-		super(instance, 81);
+		super(instance, 27);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

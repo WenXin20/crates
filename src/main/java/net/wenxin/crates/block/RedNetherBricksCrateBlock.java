@@ -88,7 +88,7 @@ public class RedNetherBricksCrateBlock extends CratesModElements.ModElement impl
 	@ObjectHolder("crates:red_nether_bricks_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public RedNetherBricksCrateBlock(CratesModElements instance) {
-		super(instance, 86);
+		super(instance, 33);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

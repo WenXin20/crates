@@ -90,7 +90,7 @@ public class DiamondCrateBlock extends CratesModElements.ModElement implements I
 	@ObjectHolder("crates:diamond_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public DiamondCrateBlock(CratesModElements instance) {
-		super(instance, 79);
+		super(instance, 26);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

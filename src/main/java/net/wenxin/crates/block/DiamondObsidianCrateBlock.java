@@ -90,7 +90,7 @@ public class DiamondObsidianCrateBlock extends CratesModElements.ModElement impl
 	@ObjectHolder("crates:diamond_obsidian_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public DiamondObsidianCrateBlock(CratesModElements instance) {
-		super(instance, 31);
+		super(instance, 30);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
