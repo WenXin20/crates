@@ -125,7 +125,7 @@ public class MagmaCrateBlock extends CratesModElements.ModElement implements IWa
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.5f, 0.5f).lightValue(3).harvestLevel(0)
-					.harvestTool(ToolType.PICKAXE).notSolid());
+					.harvestTool(ToolType.PICKAXE).notSolid().tickRandomly());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH).with(WATERLOGGED, false));
 			setRegistryName("magma_crate");
 		}
