@@ -146,16 +146,6 @@ public class MagmaCrateBlock extends CratesModElements.ModElement implements IWa
 			BubbleColumnBlock.placeBubbleColumn(worldIn, pos.up(), true);
 		}
 
-		// public BlockState updatePostPlacement(BlockState stateIn, Direction facing,
-		// BlockState facingState, IWorld worldIn, BlockPos currentPos,
-		// BlockPos facingPos) {
-		// if (facing == Direction.UP && facingState.getBlock() == Blocks.WATER) {
-		// worldIn.getPendingBlockTicks().scheduleTick(currentPos, this,
-		// this.tickRate(worldIn));
-		// }
-		// return super.updatePostPlacement(stateIn, facing, facingState, worldIn,
-		// currentPos, facingPos);
-		// }
 		public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
 				BlockPos facingPos) {
 			if (stateIn.get(WATERLOGGED)) {
