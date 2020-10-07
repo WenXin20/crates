@@ -1,11 +1,12 @@
 {
-  "_fv": 11,
+  "_fv": 12,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "obsidian_crate_upgrade",
     "customModelName": "Normal",
     "name": "Obsidian Crate Upgrade",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },

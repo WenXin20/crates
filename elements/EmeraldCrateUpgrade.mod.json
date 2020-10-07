@@ -1,11 +1,12 @@
 {
-  "_fv": 11,
+  "_fv": 12,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "emerald_crate_upgrade",
     "customModelName": "Normal",
     "name": "Emerald Crate Upgrade",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },

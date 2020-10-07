@@ -25,6 +25,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
@@ -170,6 +171,14 @@ public class IronObsidianCrateBlock extends CratesModElements.ModElement impleme
 				facing = Direction.SOUTH;
 			return this.getDefaultState().with(FACING, facing).with(WATERLOGGED,
 					ifluidstate.isTagged(FluidTags.WATER) && ifluidstate.getLevel() == 8);
+		}
+
+		public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
+				BlockPos facingPos) {
+			if (stateIn.get(WATERLOGGED)) {
+				worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+			}
+			return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
 		}
 
 		@SuppressWarnings("deprecation")

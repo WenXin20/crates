@@ -1,5 +1,5 @@
 {
-  "_fv": 11,
+  "_fv": 12,
   "_type": "block",
   "definition": {
     "texture": "magma",
@@ -26,6 +26,7 @@
     "hardness": 0.5,
     "resistance": 0.5,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },

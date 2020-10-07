@@ -1,5 +1,5 @@
 {
-  "_fv": 11,
+  "_fv": 12,
   "_type": "block",
   "definition": {
     "texture": "red_terracotta",
@@ -26,6 +26,7 @@
     "hardness": 1.25,
     "resistance": 4.2,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },

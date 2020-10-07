@@ -1,5 +1,5 @@
 {
-  "_fv": 11,
+  "_fv": 12,
   "_type": "block",
   "definition": {
     "texture": "slime_block",
@@ -26,6 +26,7 @@
     "hardness": 1.0,
     "resistance": 0.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },

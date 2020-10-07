@@ -125,7 +125,7 @@ public class MagmaCrateBlock extends CratesModElements.ModElement implements IWa
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.5f, 0.5f).lightValue(3).harvestLevel(0)
-					.harvestTool(ToolType.PICKAXE).notSolid().tickRandomly());
+					.harvestTool(ToolType.PICKAXE).notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH).with(WATERLOGGED, false));
 			setRegistryName("magma_crate");
 		}
@@ -146,8 +146,21 @@ public class MagmaCrateBlock extends CratesModElements.ModElement implements IWa
 			BubbleColumnBlock.placeBubbleColumn(worldIn, pos.up(), true);
 		}
 
+		// public BlockState updatePostPlacement(BlockState stateIn, Direction facing,
+		// BlockState facingState, IWorld worldIn, BlockPos currentPos,
+		// BlockPos facingPos) {
+		// if (facing == Direction.UP && facingState.getBlock() == Blocks.WATER) {
+		// worldIn.getPendingBlockTicks().scheduleTick(currentPos, this,
+		// this.tickRate(worldIn));
+		// }
+		// return super.updatePostPlacement(stateIn, facing, facingState, worldIn,
+		// currentPos, facingPos);
+		// }
 		public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
 				BlockPos facingPos) {
+			if (stateIn.get(WATERLOGGED)) {
+				worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+			}
 			if (facing == Direction.UP && facingState.getBlock() == Blocks.WATER) {
 				worldIn.getPendingBlockTicks().scheduleTick(currentPos, this, this.tickRate(worldIn));
 			}
@@ -240,19 +253,6 @@ public class MagmaCrateBlock extends CratesModElements.ModElement implements IWa
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
-		// @Override
-		// public void onEntityCollision(BlockState state, World world, BlockPos pos,
-		// Entity entity) {
-		// super.onEntityCollision(state, world, pos, entity);
-		// int x = pos.getX();
-		// int y = pos.getY();
-		// int z = pos.getZ();
-		// {
-		// java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-		// $_dependencies.put("entity", entity);
-		// MagmaBlockDamageProcedure.executeProcedure($_dependencies);
-		// }
-		// }
 		@Override
 		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
 				BlockRayTraceResult hit) {

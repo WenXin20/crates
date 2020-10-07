@@ -1,5 +1,5 @@
 {
-  "_fv": 11,
+  "_fv": 12,
   "_type": "block",
   "definition": {
     "texture": "honey_block_top",
@@ -26,6 +26,7 @@
     "hardness": 2.0,
     "resistance": 2.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:CratesTab"
     },

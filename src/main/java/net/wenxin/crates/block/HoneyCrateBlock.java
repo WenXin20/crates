@@ -23,14 +23,16 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.Hand;
@@ -44,6 +46,8 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.BooleanProperty;
+import net.minecraft.particles.ParticleTypes;
+import net.minecraft.particles.BlockParticleData;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
@@ -62,6 +66,10 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.item.minecart.AbstractMinecartEntity;
+import net.minecraft.entity.item.TNTEntity;
+import net.minecraft.entity.item.BoatEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
@@ -70,18 +78,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.IWaterLoggable;
 import net.minecraft.block.DirectionalBlock;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
-import net.minecraft.util.SoundEvents;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.item.BoatEntity;
-import net.minecraft.entity.item.TNTEntity;
-import net.minecraft.entity.item.minecart.AbstractMinecartEntity;
-import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.ParticleTypes;
 
 import javax.annotation.Nullable;
 
@@ -129,14 +129,13 @@ public class HoneyCrateBlock extends CratesModElements.ModElement implements IWa
 		}
 
 		public void onFallenUpon(World worldIn, BlockPos pos, Entity entityIn, float fallDistance) {
-		    entityIn.playSound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE, 1.0F, 1.0F);
-		    if (!worldIn.isRemote) {
-		       worldIn.setEntityState(entityIn, (byte)54);
-		    }
-		
-		    if (entityIn.onLivingFall(fallDistance, 0.2F)) {
-		       entityIn.playSound(this.soundType.getFallSound(), this.soundType.getVolume() * 0.5F, this.soundType.getPitch() * 0.75F);
-		    }
+			entityIn.playSound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE, 1.0F, 1.0F);
+			if (!worldIn.isRemote) {
+				worldIn.setEntityState(entityIn, (byte) 54);
+			}
+			if (entityIn.onLivingFall(fallDistance, 0.2F)) {
+				entityIn.playSound(this.soundType.getFallSound(), this.soundType.getVolume() * 0.5F, this.soundType.getPitch() * 0.75F);
+			}
 		}
 
 		public void onLanded(IBlockReader worldIn, Entity entityIn) {
@@ -157,88 +156,83 @@ public class HoneyCrateBlock extends CratesModElements.ModElement implements IWa
 			super.onEntityWalk(worldIn, pos, entityIn);
 		}
 
-   public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-      if (this.entityPos(pos, entityIn)) {
-         this.playerAdv(entityIn, pos);
-         this.entityMotion(entityIn);
-         this.entitySound(worldIn, entityIn);
-      }
+		public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
+			if (this.entityPos(pos, entityIn)) {
+				this.playerAdv(entityIn, pos);
+				this.entityMotion(entityIn);
+				this.entitySound(worldIn, entityIn);
+			}
+			super.onEntityCollision(state, worldIn, pos, entityIn);
+		}
 
-      super.onEntityCollision(state, worldIn, pos, entityIn);
-   }
+		private static boolean entityType(Entity entity) {
+			return entity instanceof LivingEntity || entity instanceof AbstractMinecartEntity || entity instanceof TNTEntity
+					|| entity instanceof BoatEntity;
+		}
 
-   private static boolean entityType(Entity entity) {
-      return entity instanceof LivingEntity || entity instanceof AbstractMinecartEntity || entity instanceof TNTEntity || entity instanceof BoatEntity;
-   }
+		private boolean entityPos(BlockPos pos, Entity entityIn) {
+			if (entityIn.onGround) {
+				return false;
+			} else if (entityIn.getPosY() > (double) pos.getY() + 0.9375D - 1.0E-7D) {
+				return false;
+			} else if (entityIn.getMotion().y >= -0.08D) {
+				return false;
+			} else {
+				double d0 = Math.abs((double) pos.getX() + 0.5D - entityIn.getPosX());
+				double d1 = Math.abs((double) pos.getZ() + 0.5D - entityIn.getPosZ());
+				double d2 = 0.4375D + (double) (entityIn.getWidth() / 2.0F);
+				return d0 + 1.0E-7D > d2 || d1 + 1.0E-7D > d2;
+			}
+		}
 
-   private boolean entityPos(BlockPos pos, Entity entityIn) {
-      if (entityIn.onGround) {
-         return false;
-      } else if (entityIn.getPosY() > (double)pos.getY() + 0.9375D - 1.0E-7D) {
-         return false;
-      } else if (entityIn.getMotion().y >= -0.08D) {
-         return false;
-      } else {
-         double d0 = Math.abs((double)pos.getX() + 0.5D - entityIn.getPosX());
-         double d1 = Math.abs((double)pos.getZ() + 0.5D - entityIn.getPosZ());
-         double d2 = 0.4375D + (double)(entityIn.getWidth() / 2.0F);
-         return d0 + 1.0E-7D > d2 || d1 + 1.0E-7D > d2;
-      }
-   }
+		private void playerAdv(Entity entityIn, BlockPos pos) {
+			if (entityIn instanceof ServerPlayerEntity && entityIn.world.getGameTime() % 20L == 0L) {
+				CriteriaTriggers.field_229864_K_.func_227152_a_((ServerPlayerEntity) entityIn, entityIn.world.getBlockState(pos));
+			}
+		}
 
-   private void playerAdv(Entity entityIn, BlockPos pos) {
-      if (entityIn instanceof ServerPlayerEntity && entityIn.world.getGameTime() % 20L == 0L) {
-         CriteriaTriggers.field_229864_K_.func_227152_a_((ServerPlayerEntity)entityIn, entityIn.world.getBlockState(pos));
-      }
+		private void entityMotion(Entity enitityIn) {
+			Vec3d vec3d = enitityIn.getMotion();
+			if (vec3d.y < -0.13D) {
+				double d0 = -0.05D / vec3d.y;
+				enitityIn.setMotion(new Vec3d(vec3d.x * d0, -0.05D, vec3d.z * d0));
+			} else {
+				enitityIn.setMotion(new Vec3d(vec3d.x, -0.05D, vec3d.z));
+			}
+			enitityIn.fallDistance = 0.0F;
+		}
 
-   }
+		private void entitySound(World world, Entity entityIn) {
+			if (entityType(entityIn)) {
+				if (world.rand.nextInt(5) == 0) {
+					entityIn.playSound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE, 1.0F, 1.0F);
+				}
+				if (!world.isRemote && world.rand.nextInt(5) == 0) {
+					world.setEntityState(entityIn, (byte) 53);
+				}
+			}
+		}
 
-   private void entityMotion(Entity enitityIn) {
-      Vec3d vec3d = enitityIn.getMotion();
-      if (vec3d.y < -0.13D) {
-         double d0 = -0.05D / vec3d.y;
-         enitityIn.setMotion(new Vec3d(vec3d.x * d0, -0.05D, vec3d.z * d0));
-      } else {
-         enitityIn.setMotion(new Vec3d(vec3d.x, -0.05D, vec3d.z));
-      }
+		@OnlyIn(Dist.CLIENT)
+		public static void entityPos3(Entity entityIn) {
+			entityPos2(entityIn, 5);
+		}
 
-      enitityIn.fallDistance = 0.0F;
-   }
+		@OnlyIn(Dist.CLIENT)
+		public static void entityPos4(Entity entityIn) {
+			entityPos2(entityIn, 10);
+		}
 
-   private void entitySound(World world, Entity entityIn) {
-      if (entityType(entityIn)) {
-         if (world.rand.nextInt(5) == 0) {
-            entityIn.playSound(SoundEvents.BLOCK_HONEY_BLOCK_SLIDE, 1.0F, 1.0F);
-         }
-
-         if (!world.isRemote && world.rand.nextInt(5) == 0) {
-            world.setEntityState(entityIn, (byte)53);
-         }
-      }
-
-   }
-
-   @OnlyIn(Dist.CLIENT)
-   public static void entityPos3(Entity entityIn) {
-      entityPos2(entityIn, 5);
-   }
-
-   @OnlyIn(Dist.CLIENT)
-   public static void entityPos4(Entity entityIn) {
-      entityPos2(entityIn, 10);
-   }
-
-   @OnlyIn(Dist.CLIENT)
-   private static void entityPos2(Entity entityIn, int ent) {
-      if (entityIn.world.isRemote) {
-         BlockState blockstate = Blocks.HONEY_BLOCK.getDefaultState();
-
-         for(int i = 0; i < ent; ++i) {
-            entityIn.world.addParticle(new BlockParticleData(ParticleTypes.BLOCK, blockstate), entityIn.getPosX(), entityIn.getPosY(), entityIn.getPosZ(), 0.0D, 0.0D, 0.0D);
-         }
-
-      }
-   }
+		@OnlyIn(Dist.CLIENT)
+		private static void entityPos2(Entity entityIn, int ent) {
+			if (entityIn.world.isRemote) {
+				BlockState blockstate = Blocks.HONEY_BLOCK.getDefaultState();
+				for (int i = 0; i < ent; ++i) {
+					entityIn.world.addParticle(new BlockParticleData(ParticleTypes.BLOCK, blockstate), entityIn.getPosX(), entityIn.getPosY(),
+							entityIn.getPosZ(), 0.0D, 0.0D, 0.0D);
+				}
+			}
+		}
 
 		@Override
 		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
@@ -284,6 +278,14 @@ public class HoneyCrateBlock extends CratesModElements.ModElement implements IWa
 				facing = Direction.SOUTH;
 			return this.getDefaultState().with(FACING, facing).with(WATERLOGGED,
 					ifluidstate.isTagged(FluidTags.WATER) && ifluidstate.getLevel() == 8);
+		}
+
+		public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
+				BlockPos facingPos) {
+			if (stateIn.get(WATERLOGGED)) {
+				worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+			}
+			return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
 		}
 
 		@SuppressWarnings("deprecation")
